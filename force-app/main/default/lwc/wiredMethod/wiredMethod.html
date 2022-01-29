@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Wire method" icon-name="standard:case">
+        <div class="slds-m-around_small">
+            <template for:each={Case.data} for:item="item">
+                <p key={item.id}>
+                    {item.Subject} <br>
+                    {item.Status}
+                </p>
+            </template>
+            <template if:true={Case.error}>
+                There is an Error
+            </template>
+        </div>
+    </lightning-card>
+</template>

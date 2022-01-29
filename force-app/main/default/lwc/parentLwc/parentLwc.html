@@ -1,0 +1,18 @@
+<template>
+    <div class="margin-bottom-2rem">
+        <lightning-card title="Parent to child" icon-name="custom:custom14">
+            
+            <div class="slds-m-around_medium">
+                <lightning-input label="Name" placeholder="Enter contact name" onchange={handleChange}></lightning-input>
+                <button class="slds-button slds-button_brand"  onclick={addUser}>Add</button>
+            </div>
+
+            <div class="slds-m-around_medium">
+                <h1>List of contacts</h1>
+                <c-child-lwc user-details={childVal}></c-child-lwc>
+            </div>
+        </lightning-card>
+    </div>
+
+
+</template>

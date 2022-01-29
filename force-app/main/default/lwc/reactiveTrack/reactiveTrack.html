@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Property Demo" icon-name="custom:custom54">
+        <div class="slds-m-around_small">
+            <lightning-input
+                label="Public Property"
+                placeholder="Reactive Property"
+                onchange={handleChange}
+            ></lightning-input>
+            <c-chech-api val={message}></c-chech-api>
+            <div class="slds-m-around_small">
+                message is : {message}
+            
+            </div>
+        </div>
+    </lightning-card>
+</template>

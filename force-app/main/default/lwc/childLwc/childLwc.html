@@ -1,0 +1,14 @@
+<template>
+    <template for:each={userDetails} for:item="user">
+        <div class="card" key={user.name}>
+            <h2>{user.name}</h2>
+        </div>
+    </template>
+
+    <template for:each={childVal} for:item="cval">
+        <div class="card" key={user.name}>
+            <h2>{cval.name}</h2>
+        </div>
+    </template>
+</template>
+

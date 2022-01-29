@@ -1,0 +1,70 @@
+<template>
+    <lightning-card title="calculator" icon-name="custom:custom54" class="bobby">
+           <div class="slds-m-around_small">
+            <lightning-input
+                name="square"
+                value={area}
+                label="Enter square"
+                placeholder="Enter square"
+                onchange={squareChange}
+            ></lightning-input>
+            <div class="slds-m-around_small">
+                square is : {val1}
+            </div>
+        </div>
+
+        <div class="slds-m-around_small">
+            <lightning-input
+                value={rectangle}
+                name="number1"
+                label="Enter width of rectangle"
+                placeholder="Enter width of rectangle"
+                onchange={rectangleChange}
+            ></lightning-input>
+
+            <lightning-input
+            value={rectangle}
+            name="number2"
+            label="Enter height of rectangle"
+            placeholder="Enter height of rectangle"
+            onchange={rectangleChange}
+            ></lightning-input>
+            <div class="slds-m-around_small">
+                rectangle is : {rect1}
+            </div>
+        </div>
+
+            <div class="slds-m-around_small">
+            <lightning-input
+                value={diagonal1}
+                name="diagonal1"
+                label="Enter diagonal1 of rhombus"
+                placeholder="Enter diagonal1 of rhombus"
+                onchange={diagonalChange}
+            ></lightning-input>
+
+            <lightning-input
+            value={diagonal2}
+            name="diagonal2"
+            label="Enter diagonal2 of rhombus"
+            placeholder="Enter diagonal2 of rhombus"
+            onchange={diagonalChange}
+            ></lightning-input>
+            <div class="slds-m-around_small">
+                diagonal is : {rhom}
+        </div>
+        </div><br>
+
+        <lightning-button variant="brand" label="square" onclick={sqr} >
+        </lightning-button>
+        &nbsp;
+
+        <lightning-button variant="brand" label="rectangle" onclick={rect} >
+        </lightning-button>
+        &nbsp;
+
+        <lightning-button variant="brand" label="rhombus" onclick={rhombus} >
+        </lightning-button>
+        &nbsp;
+    </lightning-card>
+</template>
