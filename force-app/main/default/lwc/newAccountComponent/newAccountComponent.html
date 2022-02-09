@@ -1,0 +1,23 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_large">
+           <!-- <lightning-input type="text" variant="standard" name="Name"
+             label="Account name" placeholder="type here...">
+            </lightning-input>-->
+
+            <lightning-card>
+                <lightning-record-form
+                    object-api-name={objectApiName}
+                    fields={fields}
+                    onsuccess={handleSuccess}>
+                </lightning-record-form>
+            </lightning-card>
+            </div> 
+
+            <div class="slds-p-around_large">
+                <lightning-button  variant="brand" label="Next Page" title="Next" onclick={handleNext}>
+                </lightning-button> 
+            </div>
+
+    </lightning-card>
+</template>

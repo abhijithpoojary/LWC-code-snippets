@@ -1,0 +1,27 @@
+<template>
+    <lightning-card  variant="Narrow">
+        <div class="slds-p-horizontal_small">
+            <c-progress-indicator-component current-step={cuurentStep} step-values={stepValues}>
+            </c-progress-indicator-component>
+        </div>
+
+        <div class="slds-p-horizontal_small">
+            <c-new-account-component if:true={showAccount} onnext={handleNext}></c-new-account-component>
+        </div>
+
+        <div class="slds-p-horizontal_small">
+            <c-new-contact-component if:true={showContact} onnext={handleNext} onprevious={handleBack}>
+            </c-new-contact-component>
+        </div>
+
+        <div class="slds-p-horizontal_small">
+            <c-new-opportunity-component if:true={showOpportunity} onnext={handleNext} onprevious={handleBack}>
+            </c-new-opportunity-component>
+        </div>
+
+        <div class="slds-p-horizontal_small">
+            <c-google-map-in-lwc if:true={showMap} onprevious={handleBack}></c-google-map-in-lwc>
+        </div>
+
+    </lightning-card>
+</template>

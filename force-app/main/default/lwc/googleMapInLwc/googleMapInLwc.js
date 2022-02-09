@@ -37,10 +37,4 @@ export default class GoogleMapInLwc extends LightningElement {
         console.error('Error:', error);
       }
     }
-
-    /*selectedMarkerValue = 'SF1';
-
-    handleMarkerSelect(event) {
-        this.selectedMarkerValue = event.target.selectedMarkerValue;
-    }*/
 }

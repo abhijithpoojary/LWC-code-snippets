@@ -1,0 +1,27 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_large">
+           <!-- <lightning-input type="text" variant="standard" name="Name"
+             label="Opportunity name" placeholder="type here...">
+            </lightning-input>
+            </div> -->
+
+            <lightning-card>
+                <lightning-record-form
+                    object-api-name={objectApiName}
+                    fields={fields}
+                    onsuccess={handleSuccess}>
+                </lightning-record-form>
+            </lightning-card>
+            </div> 
+
+            <div class="slds-p-around_large">  
+            <lightning-button icon-name="utility:chevronleft" variant="brand" label="Back" title="Next" onclick={handleBack}>
+            </lightning-button> &nbsp; &nbsp;
+            <lightning-button variant="brand" label="Go to Map" title="Next" onclick={handleNext}>
+            </lightning-button>
+
+            </div>
+
+    </lightning-card>
+</template>
